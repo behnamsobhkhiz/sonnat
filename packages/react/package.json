@@ -1,0 +1,47 @@
+{
+  "name": "@behnamsobhkhiz/sonnat-react",
+  "version": "0.0.0",
+  "description": "SONNAT Web — React component library built on @behnamsobhkhiz/sonnat-tokens.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsup",
+    "clean": "rm -rf dist"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behnamsobhkhiz/sonnat.git",
+    "directory": "packages/react"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@behnamsobhkhiz/sonnat-tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3"
+  }
+}

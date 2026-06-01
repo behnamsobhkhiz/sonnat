@@ -1,0 +1,33 @@
+/* ============================================================
+   SONNAT — Typeface
+   IRANSans, RTL-first, weights 400 / 700.
+   ============================================================ */
+
+/* ── Production: self-hosted IRANSans ─────────────────────
+   Drop the font files into /public/fonts/ and uncomment.
+   Self-hosting avoids FOUT and keeps Persian glyphs correct.
+*/
+/*
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansWeb.woff2") format("woff2"),
+       url("/fonts/IRANSansWeb.woff")  format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url("/fonts/IRANSansWeb_Bold.woff2") format("woff2"),
+       url("/fonts/IRANSansWeb_Bold.woff")  format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* ── Prototyping fallback: Vazirmatn via CDN ──────────────
+   --font-family already lists Vazirmatn as fallback, so
+   prototypes render correctly without the IRANSans files.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap");

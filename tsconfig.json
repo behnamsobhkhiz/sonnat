@@ -1,0 +1,11 @@
+{
+  "//": "Root config for editor IntelliSense only. Type-checking runs per-package via `pnpm -r typecheck`.",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "include": [
+    "packages/*/src",
+    ".storybook"
+  ]
+}

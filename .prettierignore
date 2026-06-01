@@ -1,0 +1,8 @@
+node_modules
+dist
+storybook-static
+pnpm-lock.yaml
+packages/tokens/src/tokens.ts
+# Token CSS is the Figma source of truth — never reformat.
+packages/tokens/src/tokens.css
+packages/tokens/src/fonts.css

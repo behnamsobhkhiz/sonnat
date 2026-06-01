@@ -1,0 +1,488 @@
+/* ============================================================
+   SONNAT Design System — CSS Custom Properties
+   Source of truth: SONNAT Design System.fig (resolved May 2026)
+
+   Theming:
+     Light  → :root  (default)
+     Dark   → [data-theme="dark"] on <html> or any ancestor
+
+   Rule: components reference these properties only.
+         Never paste raw hex / px / shadow values into code.
+   ============================================================ */
+
+@import "./fonts.css";
+
+/* ============================================================
+   1. PRIMITIVES  (internal — do not use directly in components)
+   These back the semantic tokens. Listed for traceability.
+   ============================================================ */
+:root {
+  /* Crimson — brand */
+  --p-crimson-25:  #FCF8F8;
+  --p-crimson-50:  #FAE7E7;
+  --p-crimson-100: #FCC9C9;
+  --p-crimson-200: #E88787;
+  --p-crimson-300: #CD6767;
+  --p-crimson-400: #D83939;
+  --p-crimson-500: #C32E2E;
+  --p-crimson-600: #8D3131;
+  --p-crimson-700: #741C1C;
+  --p-crimson-800: #341D1D;
+  --p-crimson-900: #231515;
+
+  /* Tornado — neutral grey */
+  --p-tornado-00:   #FFFFFF;
+  --p-tornado-25:   #FCFCFD;
+  --p-tornado-50:   #F9FAFB;
+  --p-tornado-100:  #F4F4F5;
+  --p-tornado-200:  #E4E4E7;
+  --p-tornado-300:  #C3C3C9;
+  --p-tornado-400:  #A1A1AA;
+  --p-tornado-500:  #71717A;
+  --p-tornado-600:  #52525B;
+  --p-tornado-700:  #3F3F46;
+  --p-tornado-800:  #2A2A30;
+  --p-tornado-900:  #18181B;
+  --p-tornado-1000: #000000;
+
+  /* Blue — informative */
+  --p-blue-25:  #EDF2FF;
+  --p-blue-50:  #E5EEFF;
+  --p-blue-100: #D7E4FF;
+  --p-blue-200: #CDDDFF;
+  --p-blue-300: #7CA2F5;
+  --p-blue-400: #5987F2;
+  --p-blue-500: #3062D4;
+  --p-blue-600: #2759CD;
+  --p-blue-700: #395AA7;
+  --p-blue-800: #273D72;
+  --p-blue-850: #202F52;
+  --p-blue-900: #182033;
+
+  /* Green — positive */
+  --p-green-50:  #D8F8E7;
+  --p-green-100: #C6F1DA;
+  --p-green-200: #C2EBD5;
+  --p-green-300: #75CC9E;
+  --p-green-400: #4AA578;
+  --p-green-500: #1D7C4D;
+  --p-green-600: #1E714A;
+  --p-green-700: #0E4E30;
+  --p-green-800: #083B23;
+  --p-green-850: #07341F;
+  --p-green-900: #062D1B;
+
+  /* Orange — warning */
+  --p-orange-25:  #FFF0E0;
+  --p-orange-50:  #FFE8D1;
+  --p-orange-100: #FCDEC0;
+  --p-orange-200: #FFD4A8;
+  --p-orange-300: #FEB872;
+  --p-orange-400: #F6A351;
+  --p-orange-500: #E78F38;
+  --p-orange-600: #D78029;
+  --p-orange-700: #BB681A;
+  --p-orange-800: #553A1F;
+  --p-orange-850: #3E2C1A;
+  --p-orange-900: #271E15;
+
+  /* Red — negative */
+  --p-red-25:  #FFEBEB;
+  --p-red-50:  #FEE6E6;
+  --p-red-100: #FCD9D9;
+  --p-red-200: #FCCFCF;
+  --p-red-300: #F49090;
+  --p-red-400: #F26464;
+  --p-red-500: #C53434;
+  --p-red-600: #A13636;
+  --p-red-700: #952D2D;
+  --p-red-800: #732727;
+  --p-red-850: #662424;
+  --p-red-900: #592121;
+}
+
+/* ============================================================
+   2. NON-COLOR TOKENS  (mode-independent)
+   ============================================================ */
+:root {
+  /* ── Typography ──────────────────────────────────────── */
+  --font-family: "IRANSans", "Vazirmatn", "Tahoma", system-ui;
+  --font-weight-regular: 400;
+  --font-weight-bold:    700;
+
+  --type-2xl-size: 24px;  --type-2xl-lh: 40px;  /* Display */
+  --type-xl-size:  20px;  --type-xl-lh:  32px;  /* Heading */
+  --type-lg-size:  18px;  --type-lh-lg:  30px;  /* Title   */
+  --type-md-size:  16px;  --type-md-lh:  26px;  /* Body    */
+  --type-sm-size:  14px;  --type-sm-lh:  24px;  /* Subtitle*/
+  --type-xs-size:  12px;  --type-xs-lh:  20px;  /* Caption */
+
+  /* ── Spacing (base 4px, t-shirt scale) ───────────────── */
+  --space-2xs: 2px;
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  12px;
+  --space-lg:  16px;
+  --space-xl:  24px;
+  --space-2xl: 32px;
+  --space-3xl: 64px;
+  --space-4xl: 128px;
+
+  /* ── Radius ──────────────────────────────────────────── */
+  --radius-2xs:   2px;
+  --radius-xs:    4px;
+  --radius-sm:    8px;
+  --radius-md:    12px;
+  --radius-lg:    16px;
+  --radius-xl:    24px;
+  --radius-2xl:   32px;
+  --radius-3xl:   64px;
+  --radius-round: 128px;
+
+  /* ── Border width ────────────────────────────────────── */
+  --border-sm: 1px;
+  --border-md: 2px;
+  --border-lg: 3px;
+  --border-xl: 4px;
+
+  /* ── Z-index ─────────────────────────────────────────── */
+  --z-below:      -1;
+  --z-base:        0;
+  --z-above:       1;
+  --z-navigation:  1100;
+  --z-dialogue:    1400;
+
+  /* ── Breakpoint edges (px values — consume in JS) ─────── */
+  --bp-mobile-sm-min: 320px;  --bp-mobile-sm-max: 359px;
+  --bp-mobile-lg-min: 360px;  --bp-mobile-lg-max: 520px;
+  --bp-tablet-min:    521px;  --bp-tablet-max:    1024px;
+  --bp-laptop-sm-min: 1025px; --bp-laptop-sm-max: 1280px;
+  --bp-laptop-lg-min: 1281px; --bp-laptop-lg-max: 1440px;
+  --bp-desktop-min:   1441px; --bp-desktop-max:   1920px;
+
+  /* ── Motion ──────────────────────────────────────────── */
+  --motion-fast:    150ms;
+  --motion-default: 200ms;
+  --motion-slow:    300ms;
+  --ease-default:   cubic-bezier(0.2, 0, 0, 1);
+  --ease-in:        ease-in;
+  --ease-out:       ease-out;
+
+  /* ── Layout constants (not yet Figma vars) ───────────── */
+  --layout-appbar-height: 56px;
+  --layout-bottomnav-height: 56px;
+}
+
+/* ============================================================
+   3. SEMANTIC TOKENS — LIGHT  (use these in components)
+   ============================================================ */
+:root {
+  /* ── Shadows ─────────────────────────────────────────── */
+  --shadow-xs:    0 1px 2px rgba(0, 0, 0, 0.08);
+  --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.12);
+  --shadow-md:    0 4px 12px rgba(16, 24, 40, 0.04), 0 2px 4px rgba(16, 24, 40, 0.02);
+  --shadow-lg:    0 12px 24px rgba(137, 138, 141, 0.16);
+  --shadow-xl:    0 4px 40px rgba(0, 0, 0, 0.04);
+  --shadow-sheet: 0 -2px 16px rgba(16, 24, 40, 0.06);
+
+  /* ── Surface ─────────────────────────────────────────── */
+  --surface-neutral-weaker:   #FFFFFF;
+  --surface-neutral-weak:     #F4F4F5;
+  --surface-neutral-default:  #E4E4E7;
+  --surface-neutral-strong:   #C3C3C9;
+  --surface-neutral-stronger: #A1A1AA;
+  --surface-neutral-on-color: #FFFFFF;
+
+  --surface-inverted-weaker:   #71717A;
+  --surface-inverted-weak:     #52525B;
+  --surface-inverted-default:  #3F3F46;
+  --surface-inverted-strong:   #2A2A30;
+  --surface-inverted-stronger: #18181B;
+  --surface-inverted-on-color: #000000;
+
+  --surface-brand-weakest:   #FCF8F8;
+  --surface-brand-weaker:    #FAE7E7;
+  --surface-brand-weak:      #FCC9C9;
+  --surface-brand-default:   #E88787;
+  --surface-brand-strong:    #D83939;
+  --surface-brand-stronger:  #C32E2E;
+  --surface-brand-strongest: #8D3131;
+
+  --surface-informative-weaker:   #EDF2FF;
+  --surface-informative-weak:     #E5EEFF;
+  --surface-informative-default:  #D7E4FF;
+  --surface-informative-strong:   #7CA2F5;
+  --surface-informative-stronger: #3062D4;
+
+  --surface-positive-weaker:   #E6F9EF;
+  --surface-positive-weak:     #D8F8E7;
+  --surface-positive-default:  #C2EBD5;
+  --surface-positive-strong:   #75CC9E;
+  --surface-positive-stronger: #1D7C4D;
+
+  --surface-warning-weaker:   #FFF0E0;
+  --surface-warning-weak:     #FFE8D1;
+  --surface-warning-default:  #FCDEC0;
+  --surface-warning-strong:   #FEB872;
+  --surface-warning-stronger: #F6A351;
+
+  --surface-negative-weaker:   #FFEBEB;
+  --surface-negative-weak:     #FEE6E6;
+  --surface-negative-default:  #FCD9D9;
+  --surface-negative-strong:   #F49090;
+  --surface-negative-stronger: #C53434;
+
+  --surface-dimmer-neutral-weak:    rgba(0, 0, 0, 0.16);
+  --surface-dimmer-neutral-default: rgba(0, 0, 0, 0.32);
+  --surface-dimmer-neutral-strong:  rgba(0, 0, 0, 0.64);
+  --surface-dimmer-brand-weak:      rgba(195, 46, 46, 0.16);
+  --surface-dimmer-brand-default:   rgba(195, 46, 46, 0.32);
+  --surface-dimmer-brand-strong:    rgba(195, 46, 46, 0.64);
+
+  /* ── Content (text / icons) ──────────────────────────── */
+  --content-neutral-weaker:   #C3C3C9;
+  --content-neutral-weak:     #A1A1AA;
+  --content-neutral-default:  #71717A;
+  --content-neutral-strong:   #52525B;
+  --content-neutral-stronger: #2A2A30;
+  --content-neutral-on-color: #FFFFFF;
+
+  --content-inverted-weaker:   #FFFFFF;
+  --content-inverted-weak:     #F4F4F5;
+  --content-inverted-default:  #C3C3C9;
+  --content-inverted-strong:   #A1A1AA;
+  --content-inverted-stronger: #71717A;
+  --content-inverted-on-color: #2A2A30;
+
+  --content-brand-weaker:   #FCC9C9;
+  --content-brand-weak:     #E88787;
+  --content-brand-default:  #CD6767;
+  --content-brand-strong:   #C32E2E;
+  --content-brand-stronger: #8D3131;
+
+  --content-informative-weaker:   #7CA2F5;
+  --content-informative-weak:     #5987F2;
+  --content-informative-default:  #3062D4;
+  --content-informative-strong:   #2759CD;
+  --content-informative-stronger: #395AA7;
+
+  --content-positive-weaker:   #75CC9E;
+  --content-positive-weak:     #4AA578;
+  --content-positive-default:  #1D7C4D;
+  --content-positive-strong:   #1E714A;
+  --content-positive-stronger: #0E4E30;
+
+  --content-warning-weaker:   #E78F38;
+  --content-warning-weak:     #D78029;
+  --content-warning-default:  #BB681A;
+  --content-warning-strong:   #553A1F;
+  --content-warning-stronger: #3E2C1A;
+
+  --content-negative-weaker:   #F49090;
+  --content-negative-weak:     #F26464;
+  --content-negative-default:  #C53434;
+  --content-negative-strong:   #A13636;
+  --content-negative-stronger: #952D2D;
+
+  /* ── Border ──────────────────────────────────────────── */
+  --border-neutral-weaker:   #E4E4E7;
+  --border-neutral-weak:     #C3C3C9;
+  --border-neutral-default:  #A1A1AA;
+  --border-neutral-strong:   #71717A;
+  --border-neutral-stronger: #52525B;
+
+  --border-brand-weaker:   #FCC9C9;
+  --border-brand-weak:     #E88787;
+  --border-brand-default:  #CD6767;
+  --border-brand-strong:   #C32E2E;
+  --border-brand-stronger: #8D3131;
+
+  --border-informative-weaker:   #D7E4FF;
+  --border-informative-weak:     #CDDDFF;
+  --border-informative-default:  #7CA2F5;
+  --border-informative-strong:   #3062D4;
+  --border-informative-stronger: #395AA7;
+
+  --border-positive-weaker:   #C6F1DA;
+  --border-positive-weak:     #C2EBD5;
+  --border-positive-default:  #75CC9E;
+  --border-positive-strong:   #1D7C4D;
+  --border-positive-stronger: #0E4E30;
+
+  --border-warning-weaker:   #FCDEC0;
+  --border-warning-weak:     #FFD4A8;
+  --border-warning-default:  #FEB872;
+  --border-warning-strong:   #E78F38;
+  --border-warning-stronger: #BB681A;
+
+  --border-negative-weaker:   #FCD9D9;
+  --border-negative-weak:     #FCCFCF;
+  --border-negative-default:  #F49090;
+  --border-negative-strong:   #C53434;
+  --border-negative-stronger: #952D2D;
+}
+
+/* ============================================================
+   4. SEMANTIC TOKENS — DARK  (overrides only)
+   ============================================================ */
+[data-theme="dark"] {
+  /* ── Shadows ─────────────────────────────────────────── */
+  --shadow-xs:    0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm:    0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md:    0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-lg:    0 12px 24px rgba(0, 0, 0, 0.4);
+  --shadow-xl:    0 4px 40px rgba(0, 0, 0, 0.3);
+  --shadow-sheet: 0 -2px 16px rgba(0, 0, 0, 0.3);
+
+  /* ── Surface ─────────────────────────────────────────── */
+  --surface-neutral-weaker:   #18181B;
+  --surface-neutral-weak:     #2A2A30;
+  --surface-neutral-default:  #3F3F46;
+  --surface-neutral-strong:   #52525B;
+  --surface-neutral-stronger: #71717A;
+  --surface-neutral-on-color: #FFFFFF;
+
+  --surface-inverted-weaker:   #71717A;
+  --surface-inverted-weak:     #A1A1AA;
+  --surface-inverted-default:  #E4E4E7;
+  --surface-inverted-strong:   #F9FAFB;
+  --surface-inverted-stronger: #FCFCFD;
+  --surface-inverted-on-color: #000000;
+
+  --surface-brand-weakest:   #231515;
+  --surface-brand-weaker:    #341D1D;
+  --surface-brand-weak:      #741C1C;
+  --surface-brand-default:   #8D3131;
+  --surface-brand-strong:    #C32E2E;
+  --surface-brand-stronger:  #D83939;
+  --surface-brand-strongest: #CD6767;
+
+  --surface-informative-weaker:   #182033;
+  --surface-informative-weak:     #202F52;
+  --surface-informative-default:  #273D72;
+  --surface-informative-strong:   #2759CD;
+  --surface-informative-stronger: #7CA2F5;
+
+  --surface-positive-weaker:   #062D1B;
+  --surface-positive-weak:     #07341F;
+  --surface-positive-default:  #083B23;
+  --surface-positive-strong:   #1E714A;
+  --surface-positive-stronger: #4AA578;
+
+  --surface-warning-weaker:   #271E15;
+  --surface-warning-weak:     #3E2C1A;
+  --surface-warning-default:  #553A1F;
+  --surface-warning-strong:   #D78029;
+  --surface-warning-stronger: #F6A351;
+
+  --surface-negative-weaker:   #592121;
+  --surface-negative-weak:     #662424;
+  --surface-negative-default:  #732727;
+  --surface-negative-strong:   #A13636;
+  --surface-negative-stronger: #F26464;
+
+  --surface-dimmer-neutral-weak:    rgba(255, 255, 255, 0.08);
+  --surface-dimmer-neutral-default: rgba(255, 255, 255, 0.16);
+  --surface-dimmer-neutral-strong:  rgba(255, 255, 255, 0.32);
+  /* brand dimmers identical across modes — no override needed */
+
+  /* ── Content ─────────────────────────────────────────── */
+  --content-neutral-weaker:   #3F3F46;
+  --content-neutral-weak:     #71717A;
+  --content-neutral-default:  #A1A1AA;
+  --content-neutral-strong:   #C3C3C9;
+  --content-neutral-stronger: #F9FAFB;
+  --content-neutral-on-color: #FFFFFF;
+
+  --content-inverted-weaker:   #2A2A30;
+  --content-inverted-weak:     #3F3F46;
+  --content-inverted-default:  #71717A;
+  --content-inverted-strong:   #A1A1AA;
+  --content-inverted-stronger: #C3C3C9;
+  --content-inverted-on-color: #2A2A30;
+
+  --content-brand-weaker:   #341D1D;
+  --content-brand-weak:     #741C1C;
+  --content-brand-default:  #8D3131;
+  --content-brand-strong:   #CD6767;
+  --content-brand-stronger: #E88787;
+
+  --content-informative-weaker:   #2759CD;
+  --content-informative-weak:     #3062D4;
+  --content-informative-default:  #5987F2;
+  --content-informative-strong:   #7CA2F5;
+  --content-informative-stronger: #CDDDFF;
+
+  --content-positive-weaker:   #1D7C4D;
+  --content-positive-weak:     #4AA578;
+  --content-positive-default:  #75CC9E;
+  --content-positive-strong:   #C2EBD5;
+  --content-positive-stronger: #C6F1DA;
+
+  --content-warning-weaker:   #BB681A;
+  --content-warning-weak:     #D78029;
+  --content-warning-default:  #E78F38;
+  --content-warning-strong:   #F6A351;
+  --content-warning-stronger: #FEB872;
+
+  --content-negative-weaker:   #A13636;
+  --content-negative-weak:     #C53434;
+  --content-negative-default:  #F26464;
+  --content-negative-strong:   #F49090;
+  --content-negative-stronger: #FCCFCF;
+
+  /* ── Border ──────────────────────────────────────────── */
+  --border-neutral-weaker:   #3F3F46;
+  --border-neutral-weak:     #52525B;
+  --border-neutral-default:  #71717A;
+  --border-neutral-strong:   #A1A1AA;
+  --border-neutral-stronger: #C3C3C9;
+
+  --border-brand-weaker:   #341D1D;
+  --border-brand-weak:     #8D3131;
+  --border-brand-default:  #D83939;
+  --border-brand-strong:   #CD6767;
+  --border-brand-stronger: #E88787;
+
+  --border-informative-weaker:   #182033;
+  --border-informative-weak:     #202F52;
+  --border-informative-default:  #273D72;
+  --border-informative-strong:   #395AA7;
+  --border-informative-stronger: #3062D4;
+
+  --border-positive-weaker:   #062D1B;
+  --border-positive-weak:     #07341F;
+  --border-positive-default:  #083B23;
+  --border-positive-strong:   #0E4E30;
+  --border-positive-stronger: #1D7C4D;
+
+  --border-warning-weaker:   #271E15;
+  --border-warning-weak:     #3E2C1A;
+  --border-warning-default:  #553A1F;
+  --border-warning-strong:   #BB681A;
+  --border-warning-stronger: #E78F38;
+
+  --border-negative-weaker:   #592121;
+  --border-negative-weak:     #662424;
+  --border-negative-default:  #732727;
+  --border-negative-strong:   #F26464;
+  --border-negative-stronger: #F49090;
+}
+
+/* ============================================================
+   5. GLOBAL BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  direction: rtl;
+  font-family: var(--font-family);
+  font-size: var(--type-md-size);
+  line-height: var(--type-md-lh);
+  color: var(--content-neutral-stronger);
+  background-color: var(--surface-neutral-weaker);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body { margin: 0; }

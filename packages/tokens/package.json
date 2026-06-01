@@ -1,0 +1,39 @@
+{
+  "name": "@behnamsobhkhiz/sonnat-tokens",
+  "version": "0.0.0",
+  "description": "SONNAT design tokens — raw CSS custom properties (light/dark) plus typed token names. Source of truth: SONNAT Figma.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": ["*.css"],
+  "files": ["dist", "src/tokens.css", "src/fonts.css", "TOKENS.md"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./tokens.css": "./src/tokens.css",
+    "./fonts.css": "./src/fonts.css"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "generate": "node scripts/gen-tokens.mjs",
+    "typecheck": "pnpm generate && tsc --noEmit",
+    "build": "pnpm generate && tsup",
+    "clean": "rm -rf dist"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behnamsobhkhiz/sonnat.git",
+    "directory": "packages/tokens"
+  },
+  "devDependencies": {
+    "tsup": "8.3.5",
+    "typescript": "5.6.3"
+  }
+}
