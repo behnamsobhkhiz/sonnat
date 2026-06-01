@@ -28,9 +28,13 @@ All notable changes to SONNAT Web are recorded here. Format follows
   wrapper with `name` registry + per-icon components, size on the type scale,
   color via `--content-*`; Storybook stories (searchable gallery) + docs.
   (@behnamsobhkhiz/sonnat-react)
+- Storybook **Foundation** docs: `Colors` (surface / content / border families
+  + primitives-for-reference) and `Typography` (type scale, weights, typeface),
+  rendered live from the `--*` tokens so they track the theme toolbar. (docs)
 
 ### Changed
-- _(nothing yet)_
+- Grouped the icon catalogue under **Foundation/Icons** in Storybook
+  (was `Atoms/Icon`), alongside Colors and Typography. (docs)
 
 ### Fixed
 - _(nothing yet)_
