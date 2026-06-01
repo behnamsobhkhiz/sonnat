@@ -8,7 +8,7 @@ import type { IconName } from "./icon-names";
 import { TelephoneIcon } from "./glyphs";
 
 const meta = {
-  title: "Atoms/Icon",
+  title: "Foundation/Icons",
   component: Icon,
   parameters: { layout: "centered" },
   argTypes: {
