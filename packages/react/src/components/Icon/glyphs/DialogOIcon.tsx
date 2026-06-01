@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const DialogOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M10.08 4.96Q8.72 4.96 7.56 5.64Q6.4 6.32 5.72 7.52Q5.04 8.72 5.04 10.08Q5.04 11.44 5.68 12.56Q6.32 13.68 7.44 14.32Q8.56 14.96 9.84 14.96H10.56Q10.96 14.96 11.24 15.24Q11.52 15.52 11.52 15.92V18.08L15.68 15.36Q17.36 14.16 18.2 12.88Q19.04 11.6 19.04 10.16Q19.04 8.72 18.32 7.52Q17.6 6.32 16.44 5.64Q15.28 4.96 13.92 4.96ZM10.56 20.96Q10.32 20.96 10.08 20.8Q9.52 20.56 9.52 19.92V16.96Q7.76 16.88 6.24 15.92Q4.72 14.96 3.88 13.44Q3.04 11.92 3.04 10.04Q3.04 8.16 3.96 6.52Q4.88 4.88 6.52 3.92Q8.16 2.96 10.08 2.96H13.92Q15.84 2.96 17.48 3.92Q19.12 4.88 20.08 6.52Q21.04 8.16 21.04 10.08Q21.04 14.16 16.8 17.04L11.12 20.8Q10.88 20.96 10.56 20.96Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(DialogOIcon);
+export default ForwardRef;

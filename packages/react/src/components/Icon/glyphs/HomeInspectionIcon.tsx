@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const HomeInspectionIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M21.92 19.36Q22.16 19.12 22.16 18.76Q22.16 18.4 21.92 18.16L19.84 16Q20.72 14.64 20.36 13.04Q20 11.44 18.64 10.56Q17.28 9.68 15.72 10.04Q14.16 10.4 13.28 11.8Q12.4 13.2 12.76 14.8Q13.12 16.4 14.48 17.28Q15.44 17.92 16.56 17.92Q17.68 17.92 18.64 17.28L20.72 19.36Q20.96 19.6 21.32 19.6Q21.68 19.6 21.92 19.36ZM18.72 13.92Q18.72 14.8 18.08 15.44Q17.44 16.08 16.56 16.08Q15.68 16.08 15.04 15.44Q14.4 14.8 14.4 13.88Q14.4 12.96 15.04 12.32Q15.68 11.68 16.56 11.68Q17.44 11.68 18.08 12.32Q18.72 12.96 18.72 13.92ZM4.48 11.6V20.96H16.08Q13.76 20.72 12.08 19.04H6.48V10.08L12.48 5.52L15.28 7.68Q16.08 7.44 16.92 7.44Q17.76 7.44 18.64 7.6L12.48 3.04L1.52 11.44L2.72 13.04Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(HomeInspectionIcon);
+export default ForwardRef;

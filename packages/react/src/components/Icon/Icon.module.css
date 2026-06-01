@@ -1,0 +1,62 @@
+/* Icon — token-only styling.
+   Sizing rides the type scale (icons pair with text); color rides --content-*.
+   The glyph SVGs are fill="currentColor", so `color` drives the icon color. */
+
+.icon {
+  display: inline-block;
+  inline-size: 1em;
+  block-size: 1em;
+  fill: currentColor;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+/* ── Size: 1em scaled by a type-scale step ───────────────── */
+.xs {
+  font-size: var(--type-xs-size);
+} /* 12 */
+.sm {
+  font-size: var(--type-sm-size);
+} /* 14 */
+.md {
+  font-size: var(--type-md-size);
+} /* 16 */
+.lg {
+  font-size: var(--type-lg-size);
+} /* 18 */
+.xl {
+  font-size: var(--type-xl-size);
+} /* 20 */
+.xxl {
+  font-size: var(--type-2xl-size);
+} /* 24 */
+
+/* ── Tone: maps to the semantic content layer ────────────── */
+/* `inherit` has no class — the icon takes the surrounding text color. */
+.toneNeutral {
+  color: var(--content-neutral-default);
+}
+.toneNeutralStrong {
+  color: var(--content-neutral-stronger);
+}
+.toneNeutralWeak {
+  color: var(--content-neutral-weak);
+}
+.toneBrand {
+  color: var(--content-brand-default);
+}
+.tonePositive {
+  color: var(--content-positive-default);
+}
+.toneWarning {
+  color: var(--content-warning-default);
+}
+.toneNegative {
+  color: var(--content-negative-default);
+}
+.toneInformative {
+  color: var(--content-informative-default);
+}
+.toneOnColor {
+  color: var(--content-neutral-on-color);
+}

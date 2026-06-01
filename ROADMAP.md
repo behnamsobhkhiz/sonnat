@@ -31,7 +31,7 @@ natural thing to build first. (Source: "Atoms AL" set in Figma — purple nodes.
 
 | Atom | Status | Notes |
 |---|---|---|
-| Icon | 📋 | Icon system / wrapper. Needed by almost everything. |
+| Icon | 🧪 | Icon system / wrapper. Needed by almost everything. ~800 glyphs migrated from the legacy font to SVG components. |
 | Icon Placeholder | 📋 | Skeleton/placeholder slot for an icon |
 | Image Uploader | 📋 | |
 | .Error | 📋 | Inline error text atom |

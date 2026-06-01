@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const PwaIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M4.48 13.44H3.12V16.24H1.04V8H4.64Q5.84 8 6.64 8.88L6.88 9.2L5.6 13.28Q5.04 13.44 4.48 13.44ZM5.12 10.24Q5.04 10.08 4.88 9.92Q4.56 9.6 4.08 9.6H3.92H3.12V11.84H4.08Q4.56 11.84 4.96 11.52Q5.2 11.12 5.2 10.72V10.64Q5.2 10.48 5.12 10.24ZM15.2 16.24 18.56 8H16.32L14.08 13.36L12.48 8H10.72L8.96 13.36L7.76 10.88L6.64 14.32L7.84 16.24H10L11.6 11.44L13.04 16.24ZM17.2 14.8 17.84 13.2H19.68L18.8 10.72L19.84 8L22.96 16.24H20.72L20.16 14.8Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(PwaIcon);
+export default ForwardRef;

@@ -23,6 +23,11 @@ All notable changes to SONNAT Web are recorded here. Format follows
   (`@divar/sonnat-react`).
 - `Button` component (primary / secondary / ghost / danger; sm / md / lg;
   loading, full-width, icon slots). (@divar/sonnat-react)
+- `Icon` atom: ~800 glyphs migrated from the legacy SONNAT icon font to
+  tree-shakeable SVG components (no icon font ships). Token-aware `<Icon>`
+  wrapper with `name` registry + per-icon components, size on the type scale,
+  color via `--content-*`; Storybook stories (searchable gallery) + docs.
+  (@behnamsobhkhiz/sonnat-react)
 
 ### Changed
 - _(nothing yet)_

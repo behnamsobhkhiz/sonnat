@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const MoreHorizontalOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M12 10Q12.8 10 13.4 10.6Q14 11.2 14 12Q14 12.8 13.4 13.4Q12.8 14 12 14Q11.2 14 10.6 13.4Q10 12.8 10 12Q10 11.2 10.6 10.6Q11.2 10 12 10ZM6 10Q6.8 10 7.4 10.6Q8 11.2 8 12Q8 12.8 7.4 13.4Q6.8 14 6 14Q5.2 14 4.6 13.4Q4 12.8 4 12Q4 11.2 4.6 10.6Q5.2 10 6 10ZM18 10Q18.8 10 19.4 10.6Q20 11.2 20 12Q20 12.8 19.4 13.4Q18.8 14 18 14Q17.2 14 16.6 13.4Q16 12.8 16 12Q16 11.2 16.6 10.6Q17.2 10 18 10Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(MoreHorizontalOIcon);
+export default ForwardRef;

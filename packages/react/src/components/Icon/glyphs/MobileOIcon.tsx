@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const MobileOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M16 1.04Q17.28 1.04 18.16 1.88Q19.04 2.72 19.04 4V20Q19.04 21.28 18.16 22.16Q17.28 23.04 16 23.04H8Q6.72 23.04 5.88 22.16Q5.04 21.28 5.04 20V4Q5.04 2.72 5.88 1.88Q6.72 1.04 8 1.04ZM16 2.96H8Q7.6 2.96 7.28 3.28Q6.96 3.6 6.96 4V20Q6.96 20.4 7.28 20.72Q7.6 21.04 8 21.04H16Q16.4 21.04 16.68 20.72Q16.96 20.4 16.96 20V4Q16.96 3.6 16.68 3.32Q16.4 3.04 16 3.04ZM12 16.48Q12.64 16.48 13.08 16.92Q13.52 17.36 13.52 18Q13.52 18.64 13.08 19.08Q12.64 19.52 12 19.52Q11.36 19.52 10.92 19.08Q10.48 18.64 10.48 18Q10.48 17.36 10.92 16.92Q11.36 16.48 12 16.48Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(MobileOIcon);
+export default ForwardRef;

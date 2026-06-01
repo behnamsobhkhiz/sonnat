@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const FunnelOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M18 2.96H6Q5.2 2.96 4.6 3.56Q4 4.16 4 4.96V6Q4 6.72 4.4 7.2L8.56 12.64Q9.04 13.12 8.96 13.84V19.92Q8.96 20.96 9.68 21.52Q10.24 22 11.04 22Q11.84 22 12.4 21.44L14.4 19.44Q15.04 18.8 15.04 18V13.84Q15.04 13.12 15.44 12.64L19.6 7.2Q20 6.72 20 6V4.96Q20 4.16 19.4 3.56Q18.8 2.96 18 2.96ZM18 4.96V5.92Q18 6 17.92 6.08L13.44 11.92Q12.96 12.48 12.96 13.2V17.84Q12.96 18 12.88 18.08L10.96 20V13.2Q10.96 12.48 10.56 11.92L6.16 6.16Q6 6 6 5.76V5.04H18Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(FunnelOIcon);
+export default ForwardRef;

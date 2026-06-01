@@ -124,5 +124,6 @@ generate correct prototypes later.
 | Component | Path | Status |
 |---|---|---|
 | Button | `packages/react/src/components/Button` | ✅ ready |
+| Icon | `packages/react/src/components/Icon` | 🧪 awaiting review |
 
 *(Keep this table current as components land.)*

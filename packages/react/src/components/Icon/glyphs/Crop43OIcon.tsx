@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const Crop43OIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M6 7.04Q5.6 7.04 5.28 7.32Q4.96 7.6 4.96 8V16Q4.96 16.4 5.28 16.72Q5.6 17.04 6 17.04H18Q18.4 17.04 18.72 16.72Q19.04 16.4 19.04 16V8Q19.04 7.6 18.72 7.32Q18.4 7.04 18 7.04ZM18 19.04H6Q4.72 19.04 3.88 18.16Q3.04 17.28 3.04 16V8Q3.04 6.72 3.88 5.88Q4.72 5.04 6 5.04H18Q19.28 5.04 20.16 5.88Q21.04 6.72 21.04 8V16Q21.04 17.28 20.16 18.16Q19.28 19.04 18 19.04Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(Crop43OIcon);
+export default ForwardRef;

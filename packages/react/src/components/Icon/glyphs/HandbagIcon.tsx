@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const HandbagIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M18 8H20.08Q20.48 8 20.76 8.24Q21.04 8.48 21.12 8.88L22 16.96Q22 17.44 21.6 17.76L22 21.04Q22 21.44 21.72 21.72Q21.44 22 21.04 22H3.04Q2.56 22 2.24 21.68Q2 21.36 2 21.04V20.88L2.4 17.84Q2 17.52 2 17.04V16.88L2.88 8.88Q2.96 8.48 3.24 8.24Q3.52 8 3.92 8H6Q6 6.4 6.8 5Q7.6 3.6 9 2.8Q10.4 2 12 2Q13.6 2 15 2.8Q16.4 3.6 17.2 5Q18 6.4 18 8ZM4.8 10 4.08 16H10.64L11.04 14.72Q11.12 14.4 11.4 14.2Q11.68 14 12 14Q12.32 14 12.6 14.2Q12.88 14.4 12.96 14.64L13.36 16H19.84L19.2 10ZM12 4Q10.32 4 9.16 5.16Q8 6.32 8 8H16Q16 6.32 14.84 5.16Q13.68 4 12 4ZM19.6 18H14Q14 18.32 13.76 18.64Q13.52 18.96 13.04 19.04H10.96Q10.48 19.04 10.16 18.56Q10 18.32 10 18H4.4L4.16 20H19.84Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(HandbagIcon);
+export default ForwardRef;

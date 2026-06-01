@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const PlayOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M9.04 5.68Q8.72 5.68 8.56 5.76Q8 6.08 8 6.64V17.36Q8 17.92 8.52 18.2Q9.04 18.48 9.52 18.16L17.84 12.88Q18.32 12.56 18.32 12Q18.32 11.44 17.84 11.2L9.52 5.84Q9.28 5.68 9.04 5.68ZM9.04 20.32Q8.32 20.32 7.68 20.04Q7.04 19.76 6.64 19.2Q6 18.4 6 17.2V6.8Q6 6.16 6.36 5.36Q6.72 4.56 7.28 4.24Q8.08 3.68 8.96 3.68Q9.84 3.68 10.64 4.16L18.88 9.44Q19.68 10 20 10.64Q20.48 11.76 20.16 12.84Q19.84 13.92 18.96 14.56L10.64 19.84Q9.92 20.32 9.04 20.32Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(PlayOIcon);
+export default ForwardRef;
