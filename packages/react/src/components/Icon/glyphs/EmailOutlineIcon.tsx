@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const EmailOutlineIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M18.96 18H5.04Q4.64 18 4.32 17.68Q4 17.36 4 16.96V7.28L11.36 14.08Q11.6 14.32 12 14.32Q12.4 14.32 12.64 14.08L20 7.28V16.96Q20 17.36 19.68 17.68Q19.36 18 18.96 18ZM18.48 6 12 12 5.52 6ZM18.96 4H5.04Q3.76 4 2.88 4.88Q2 5.76 2 7.04V16.96Q2 18.24 2.88 19.12Q3.76 20 5.04 20H18.96Q20.24 20 21.12 19.12Q22 18.24 22 16.96V7.04Q22 5.76 21.12 4.88Q20.24 4 18.96 4Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(EmailOutlineIcon);
+export default ForwardRef;

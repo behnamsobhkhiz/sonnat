@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const FlagWaveOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M17.44 14Q17.68 14 17.84 13.84Q18 13.68 18 13.52V8.48Q18 8.32 17.84 8.16Q17.68 8 17.44 8H15.12Q14.96 8 14.8 7.88Q14.64 7.76 14.64 7.6L14.4 6H7.52Q7.28 6 7.12 6.16Q6.96 6.32 6.96 6.48V11.52Q6.96 11.68 7.12 11.84Q7.28 12 7.52 12H11.76Q11.92 12 12.08 12.12Q12.24 12.24 12.24 12.4L12.56 14ZM6.96 14V20Q6.96 20.4 6.68 20.68Q6.4 20.96 6 20.96Q5.6 20.96 5.28 20.68Q4.96 20.4 4.96 20V4.96Q4.96 4.56 5.28 4.28Q5.6 4 6 4H13.2Q13.52 4 13.8 4.24Q14.08 4.48 14.16 4.8L14.4 6H18.96Q19.36 6 19.68 6.28Q20 6.56 20 6.96V14.96Q20 15.44 19.68 15.72Q19.36 16 18.96 16H13.76Q13.44 16 13.16 15.76Q12.88 15.52 12.8 15.2L12.56 14Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(FlagWaveOIcon);
+export default ForwardRef;

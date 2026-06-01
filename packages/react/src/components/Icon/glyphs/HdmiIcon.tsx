@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const HdmiIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M6.96 12.48H16.96Q17.44 12.48 17.72 12.2Q18 11.92 18 11.52Q18 11.12 17.72 10.8Q17.44 10.48 16.96 10.48H6.96Q6.56 10.48 6.28 10.8Q6 11.12 6 11.52Q6 11.92 6.28 12.2Q6.56 12.48 6.96 12.48ZM6 17.52H18Q18.56 17.52 18.88 17.04L20.56 14.48H22Q22.4 14.48 22.72 14.2Q23.04 13.92 23.04 13.52V7.52Q23.04 7.12 22.72 6.8Q22.4 6.48 22 6.48H2Q1.6 6.48 1.32 6.8Q1.04 7.12 1.04 7.52V13.52Q1.04 13.92 1.32 14.2Q1.6 14.48 2 14.48H3.44L5.2 17.04Q5.44 17.52 6 17.52ZM17.44 15.52H6.56L4.8 12.96Q4.56 12.48 4 12.48H2.96V8.48H20.96V12.48H20Q19.44 12.48 19.2 12.96Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(HdmiIcon);
+export default ForwardRef;

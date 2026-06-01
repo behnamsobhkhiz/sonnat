@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const RoleBrushFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M21.52 4H20Q20 2.72 19.12 1.88Q18.24 1.04 16.96 1.04H6.96Q5.76 1.04 4.88 1.88Q4 2.72 4 4V6Q4 7.28 4.88 8.16Q5.76 9.04 6.96 9.04H16.96Q18.24 9.04 19.12 8.16Q20 7.28 20 6H21.04V6.56Q21.04 8 20 9Q18.96 10 17.52 10H12Q11.6 10 11.28 10.28Q10.96 10.56 10.96 11.04V14H10.72Q10.32 14 10.04 14.28Q9.76 14.56 9.76 14.96L9.36 21.44Q9.44 22.48 10.2 23.24Q10.96 24 12.04 24Q13.12 24 13.88 23.24Q14.64 22.48 14.72 21.36L14.4 14.96Q14.32 14.56 14.04 14.28Q13.76 14 13.36 14H13.04V12H17.52Q19.04 12 20.28 11.28Q21.52 10.56 22.28 9.28Q23.04 8 23.04 6.56V5.52Q23.04 4.88 22.6 4.44Q22.16 4 21.52 4Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(RoleBrushFIcon);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const PinMapFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M12 11.36Q10.72 11.36 9.88 10.48Q9.04 9.6 9.04 8.4Q9.04 7.2 9.88 6.32Q10.72 5.44 11.96 5.44Q13.2 5.44 14.04 6.32Q14.88 7.2 14.88 8.4Q14.88 9.6 14.04 10.48Q13.2 11.36 12 11.36ZM11.76 1.04Q9.76 1.04 8.12 2.12Q6.48 3.2 5.48 4.92Q4.48 6.64 4.56 8.56Q4.56 10.8 5.84 12.6Q7.12 14.4 9.04 15.28Q10 15.68 10.56 16.48Q11.12 17.28 11.12 18.32V22.16Q11.12 22.48 11.36 22.72Q11.6 22.96 11.96 22.96Q12.32 22.96 12.56 22.72Q12.8 22.48 12.8 22.16V18.32Q12.8 17.36 13.36 16.52Q13.92 15.68 14.8 15.28Q16.88 14.4 18.16 12.56Q19.44 10.72 19.44 8.4Q19.44 6.4 18.4 4.64Q17.36 2.88 15.6 1.92Q13.84 0.96 11.76 1.04Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(PinMapFIcon);
+export default ForwardRef;

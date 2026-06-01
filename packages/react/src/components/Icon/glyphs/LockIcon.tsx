@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const LockIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M13.44 2Q14.88 2 15.92 3.04Q16.96 4.08 16.96 5.6V8Q18.24 8 19.12 8.88Q20 9.76 20 10.96V19.04Q20 20.24 19.12 21.12Q18.24 22 17.04 22H6.96Q5.76 22 4.88 21.12Q4 20.24 4 19.04V10.96Q4 9.76 4.88 8.88Q5.76 8 6.96 8V5.6Q6.96 4.08 8.04 3.04Q9.12 2 10.56 2ZM17.04 10H6.96Q6.56 10 6.28 10.28Q6 10.56 6 10.96V19.04Q6 19.44 6.28 19.72Q6.56 20 6.96 20H17.04Q17.44 20 17.72 19.72Q18 19.44 18 19.04V10.96Q18 10.56 17.72 10.28Q17.44 10 17.04 10ZM12 13.04Q12.8 13.04 13.4 13.6Q14 14.16 14 15Q14 15.84 13.4 16.4Q12.8 16.96 12 16.96Q11.2 16.96 10.6 16.4Q10 15.84 10 15Q10 14.16 10.6 13.6Q11.2 13.04 12 13.04ZM13.44 4H10.56Q9.92 4 9.48 4.48Q9.04 4.96 8.96 5.6V8H15.04V5.6Q15.04 4.96 14.56 4.48Q14.08 4 13.44 4Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(LockIcon);
+export default ForwardRef;

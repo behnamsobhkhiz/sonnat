@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const CircleNightModeFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M17.92 12.8Q17.6 14.8 16.2 16.2Q14.8 17.6 12.8 17.92Q10.56 18.32 8.68 17.16Q6.8 16 6 13.92Q5.92 13.76 6.12 13.6Q6.32 13.44 6.48 13.52Q8 14.4 9.76 14.16Q11.52 13.92 12.72 12.72Q13.92 11.52 14.16 9.8Q14.4 8.08 13.52 6.48Q13.44 6.32 13.6 6.12Q13.76 5.92 13.92 6Q16 6.8 17.16 8.68Q18.32 10.56 17.92 12.8ZM12 2Q9.28 2 7 3.36Q4.72 4.72 3.36 7Q2 9.28 2 12Q2 14.72 3.36 17Q4.72 19.28 7 20.64Q9.28 22 12 22Q14.72 22 17 20.64Q19.28 19.28 20.64 17Q22 14.72 22 12Q22 9.28 20.64 7Q19.28 4.72 17 3.36Q14.72 2 12 2Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(CircleNightModeFIcon);
+export default ForwardRef;

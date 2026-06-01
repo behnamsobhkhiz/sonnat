@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const TooltipTextFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M17.04 10H7.04Q6.64 10 6.32 9.72Q6 9.44 6 9Q6 8.56 6.32 8.28Q6.64 8 7.04 8H17.04Q17.44 8 17.72 8.28Q18 8.56 18 9Q18 9.44 17.72 9.72Q17.44 10 17.04 10ZM12 14H7.04Q6.64 14 6.32 13.72Q6 13.44 6 13Q6 12.56 6.32 12.28Q6.64 12 7.04 12H12Q12.4 12 12.72 12.28Q13.04 12.56 13.04 13Q13.04 13.44 12.72 13.72Q12.4 14 12 14ZM18.96 1.84H4.96Q3.76 1.84 2.88 2.72Q2 3.6 2 4.88V16.88Q2 18.08 2.88 18.96Q3.76 19.84 4.96 19.84H8.08L10.56 22.4Q11.2 22.96 12 22.96Q12.8 22.96 13.44 22.4L15.92 19.84H18.96Q20.24 19.84 21.12 18.96Q22 18.08 22 16.88V4.88Q22 3.6 21.12 2.72Q20.24 1.84 18.96 1.84Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(TooltipTextFIcon);
+export default ForwardRef;

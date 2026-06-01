@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const KeyboardArrowRightFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M15.28 12.72 11.76 16.24Q11.44 16.56 11.04 16.56Q10.64 16.56 10.32 16.28Q10 16 10 15.56Q10 15.12 10.32 14.88L13.2 12L10.32 9.12Q10 8.88 10 8.44Q10 8 10.32 7.72Q10.64 7.44 11.04 7.44Q11.44 7.44 11.76 7.76L15.28 11.28Q15.6 11.6 15.6 12Q15.6 12.4 15.28 12.72ZM12 2Q9.28 2 7 3.36Q4.72 4.72 3.36 7Q2 9.28 2 12Q2 14.72 3.36 17Q4.72 19.28 7 20.64Q9.28 22 12 22Q14.72 22 17 20.64Q19.28 19.28 20.64 17Q22 14.72 22 12Q22 9.28 20.64 7Q19.28 4.72 17 3.36Q14.72 2 12 2Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(KeyboardArrowRightFIcon);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const VisibilityFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M12 4.48Q15.52 4.48 18.44 6.44Q21.36 8.4 22.88 11.6Q23.12 12 22.88 12.48Q21.36 15.6 18.44 17.56Q15.52 19.52 12 19.52Q8.48 19.52 5.52 17.56Q2.56 15.6 1.04 12.48Q0.88 12 1.04 11.6Q2.56 8.4 5.52 6.44Q8.48 4.48 12 4.48ZM12 6.96Q10.64 6.96 9.48 7.64Q8.32 8.32 7.68 9.48Q7.04 10.64 7.04 12Q7.04 13.36 7.68 14.52Q8.32 15.68 9.48 16.32Q10.64 16.96 12 16.96Q13.36 16.96 14.52 16.32Q15.68 15.68 16.32 14.52Q16.96 13.36 16.96 12Q16.96 10.64 16.32 9.48Q15.68 8.32 14.52 7.64Q13.36 6.96 12 6.96ZM12 8.96Q13.28 8.96 14.16 9.84Q15.04 10.72 15.04 12Q15.04 13.28 14.16 14.12Q13.28 14.96 12 14.96Q10.72 14.96 9.88 14.12Q9.04 13.28 9.04 12Q9.04 10.72 9.88 9.84Q10.72 8.96 12 8.96Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(VisibilityFIcon);
+export default ForwardRef;

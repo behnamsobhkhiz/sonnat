@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const ZoomOutIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M16.32 14.88V14.96Q18 12.8 18 10Q18 7.84 16.92 6Q15.84 4.16 14 3.08Q12.16 2 10 2Q7.84 2 6 3.08Q4.16 4.16 3.08 6Q2 7.84 2 10Q2 12.16 3.08 14Q4.16 15.84 6 16.92Q7.84 18 10 18Q12.72 18 14.88 16.32L19.36 20.8Q19.68 21.04 20.08 21.04Q20.48 21.04 20.76 20.76Q21.04 20.48 21.04 20.08Q21.04 19.68 20.8 19.36ZM4 10Q4 8.4 4.8 7.04Q5.6 5.68 7 4.84Q8.4 4 10 4Q11.6 4 13 4.84Q14.4 5.68 15.2 7.04Q16 8.4 16 10V10.08V10Q16 11.68 15.2 13.04Q14.4 14.4 13 15.2Q11.6 16 10 16Q8.4 16 7 15.2Q5.6 14.4 4.8 13.04Q4 11.68 4 10ZM6 10Q6 9.6 6.32 9.28Q6.64 8.96 7.04 8.96H12.96Q13.44 8.96 13.72 9.28Q14 9.6 14 10Q14 10.4 13.72 10.72Q13.44 11.04 12.96 11.04H7.04Q6.64 11.04 6.32 10.72Q6 10.4 6 10Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(ZoomOutIcon);
+export default ForwardRef;

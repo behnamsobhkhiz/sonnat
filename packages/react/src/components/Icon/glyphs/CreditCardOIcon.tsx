@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const CreditCardOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M4 8H20V6.8Q20 6.48 19.76 6.24Q19.52 6 19.2 6H4.8Q4.48 6 4.24 6.24Q4 6.48 4 6.8ZM19.2 18Q19.52 18 19.76 17.76Q20 17.52 20 17.2V12H4V17.2Q4 17.52 4.24 17.76Q4.48 18 4.8 18ZM4.8 4H19.2Q20.4 4 21.2 4.8Q22 5.6 22 6.8V17.2Q22 18.4 21.2 19.2Q20.4 20 19.2 20H4.8Q3.6 20 2.8 19.2Q2 18.4 2 17.2V6.8Q2 5.6 2.8 4.8Q3.6 4 4.8 4ZM17.92 16.88H13.84Q13.44 16.88 13.12 16.6Q12.8 16.32 12.8 15.88Q12.8 15.44 13.12 15.16Q13.44 14.88 13.84 14.88H17.92Q18.32 14.88 18.6 15.16Q18.88 15.44 18.88 15.88Q18.88 16.32 18.6 16.6Q18.32 16.88 17.92 16.88Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(CreditCardOIcon);
+export default ForwardRef;

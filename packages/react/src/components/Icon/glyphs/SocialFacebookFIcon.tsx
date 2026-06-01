@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const SocialFacebookFIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M16.4 3.04H14Q12.08 3.04 10.88 4.24Q9.68 5.44 9.68 7.44V9.44H7.36Q7.2 9.44 7.12 9.56Q7.04 9.68 7.04 9.84V12.8Q7.04 12.96 7.12 13.08Q7.2 13.2 7.36 13.2H9.68V20.64Q9.68 20.8 9.8 20.92Q9.92 21.04 10.08 21.04H13.12Q13.28 21.04 13.4 20.92Q13.52 20.8 13.52 20.64V13.2H16.24Q16.4 13.2 16.52 13.08Q16.64 12.96 16.64 12.8V9.84Q16.64 9.68 16.52 9.56Q16.4 9.44 16.24 9.44H13.52V7.76Q13.52 7.04 13.76 6.76Q14 6.48 14.8 6.48H16.4Q16.48 6.48 16.6 6.36Q16.72 6.24 16.72 6.08V3.36Q16.72 3.2 16.6 3.12Q16.48 3.04 16.4 3.04Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(SocialFacebookFIcon);
+export default ForwardRef;

@@ -1,0 +1,5 @@
+import { forwardRef } from "react";
+import type { Ref, SVGProps } from "react";
+const ArrowForwardLargeOIcon = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" ref={ref} {...props}><path d="M5.12 12.72 10.8 18.4Q11.04 18.64 11.48 18.64Q11.92 18.64 12.2 18.36Q12.48 18.08 12.48 17.68Q12.48 17.28 12.16 16.96L8.24 13.04H18.16Q18.64 13.04 18.92 12.72Q19.2 12.4 19.2 12Q19.2 11.6 18.92 11.32Q18.64 11.04 18.16 11.04H8.24L12.16 7.04Q12.48 6.72 12.48 6.32Q12.48 5.92 12.2 5.64Q11.92 5.36 11.48 5.36Q11.04 5.36 10.72 5.6L5.12 11.28Q4.8 11.6 4.8 12Q4.8 12.4 5.12 12.72Z" /></svg>; // @__PURE__ lets bundlers tree-shake unused glyphs (forwardRef is a top-level call).
+const ForwardRef = /* @__PURE__ */forwardRef(ArrowForwardLargeOIcon);
+export default ForwardRef;
